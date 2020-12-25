@@ -1,5 +1,6 @@
 const utility = require('./Utility.js')
-const addUtility = require('../AddData/TakeNewData.js')
+const addUtility = require('../TakeNewData.js')
+const viewUtility = require('../ViewPreviousData.js')
 
 //main menu display function
 displayMainMenu = () => {
@@ -16,7 +17,7 @@ displayMainMenu = () => {
             addUtility.addNewData(fileName)
             break;
         case 2:
-
+            viewUtility.viewMenu()
             break;
         case 3:
 

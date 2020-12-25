@@ -1,4 +1,4 @@
-const utility = require('../MainUtility/Utility.js')
+const utility = require('./MainUtility/Utility.js')
 
 const patternFirstName = RegExp('^[A-Z][a-z]{2,}$', 'gm')
 const patternLastName = RegExp('^[A-Z][a-z]{2,}$', 'gm')
@@ -25,13 +25,13 @@ class AddDataUtility {
             newData.push(result)
         }
         let formattedData = {
-            First_Name: 'Demo',
-            Last_Name: 'Demo',
-            Address: 'DEmo123456',
-            City: 'Demo',
-            State: 'Demo',
-            PIN: '123456',
-            Phone_Number: '91 9002832439'
+            First_Name: newData[0],
+            Last_Name: newData[1],
+            Address: newData[2],
+            City: newData[3],
+            State: newData[4],
+            PIN: newData[5],
+            Phone_Number: newData[6]
           }
         utility.writeNewData(fileName,formattedData)
     }
