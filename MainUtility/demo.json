@@ -7,5 +7,14 @@
         "State": "West Bengal",
         "PIN": "713101",
         "Phone_Number": "91 9002832439"
+    },
+    {
+        "First_Name": "Demo",
+        "Last_Name": "Demo",
+        "Address": "DEmo123456",
+        "City": "Demo",
+        "State": "Demo",
+        "PIN": "123456",
+        "Phone_Number": "91 9002832439"
     }
 ]

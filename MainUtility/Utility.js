@@ -32,6 +32,18 @@ class Utility {
         return addressBookData
     }
 
+    //appends new info to the file
+    writeNewData = (filename, input) => {
+        addressBookData.push(input);
+        try {
+            let data = JSON.stringify(addressBookData);
+            fs.writeFileSync(filename, data);
+            console.log("New Data Written to file successfully!\n")
+        } catch (err) {
+            console.log("Uh Oh there was some error. Please try again\n")
+        }
+    }
+
 }
 
 module.exports = new Utility()

@@ -1,4 +1,5 @@
 const utility = require('./Utility.js')
+const addUtility = require('../AddData/TakeNewData.js')
 
 //main menu display function
 displayMainMenu = () => {
@@ -11,10 +12,8 @@ displayMainMenu = () => {
     console.log(choice)
     switch (+choice) {
         case 1:
-
-            break;
-        case 2:
-
+            console.log("\n#### ADD NEW DATA ###")
+            addUtility.addNewData(fileName)
             break;
         case 2:
 
@@ -23,17 +22,19 @@ displayMainMenu = () => {
 
             break;
         case 4:
-
             console.log("\nThank You for using address book!\n")
             process.exit(0)
         default:
             console.log("\nWrong input. Please try again.")
-            displayMainMenu()
     }
+    displayMainMenu()
 }
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Main code starts here~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 console.log("\nWelcome to Address Book!")
-var fileName = utility.takeUserInput("\nPlease enter file name to load from")
+//var fileName = utility.takeUserInput("\nPlease enter file name to load from")
+var fileName = "demo.json"
 
 utility.readPresentData(fileName)
 var addressbookdata = utility.retriveData()
