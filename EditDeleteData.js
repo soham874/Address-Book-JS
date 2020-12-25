@@ -1,4 +1,4 @@
-const utility = require('./MainUtility/Utility.js')
+const utility = require('./Utility.js')
 const viewUtility = require('./ViewPreviousData.js')
 const addUtility = require('./TakeNewData.js')
 const fs = require('fs');

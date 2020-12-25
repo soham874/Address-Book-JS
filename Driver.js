@@ -1,7 +1,7 @@
 const utility = require('./Utility.js')
-const addUtility = require('../TakeNewData.js')
-const viewUtility = require('../ViewPreviousData.js')
-const editUtility = require('../EditDeleteData.js')
+const addUtility = require('./TakeNewData.js')
+const viewUtility = require('./ViewPreviousData.js')
+const editUtility = require('./EditDeleteData.js')
 
 //main menu display function
 displayMainMenu = () => {

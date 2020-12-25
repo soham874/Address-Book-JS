@@ -1,4 +1,4 @@
-const readLine = require('../../node_modules/readline-sync')
+const readLine = require('../node_modules/readline-sync')
 const fs = require('fs');
 var addressBookData = []
 

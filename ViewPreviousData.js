@@ -1,4 +1,4 @@
-const utility = require('./MainUtility/Utility.js')
+const utility = require('./Utility.js')
 
 class ViewData {
 

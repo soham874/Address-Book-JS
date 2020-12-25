@@ -1,5 +1,4 @@
-const { verify } = require('crypto')
-const utility = require('./MainUtility/Utility.js')
+const utility = require('./Utility.js')
 
 const patternFirstName = RegExp('^[A-Z]{1}[a-z]{2,}.*$')
 const patternLastName = RegExp('^[A-Z]{1}[a-z]{2,}.*$')
