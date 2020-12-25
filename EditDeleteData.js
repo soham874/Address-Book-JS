@@ -119,7 +119,8 @@ class EditDelete {
             return
         }
 
-        fs.writeFileSync(fileName,JSON.stringify([]))
+        let data = JSON.stringify([]);
+        fs.writeFileSync(fileName, data);
         console.log("All data deleted. Reinitializing code data....")
         utility.readPresentData(fileName)
     }
