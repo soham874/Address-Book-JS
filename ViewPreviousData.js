@@ -2,6 +2,7 @@ const utility = require('./MainUtility/Utility.js')
 
 class ViewData {
 
+    //main menu controlling the view options
     viewMenu = () => {
         console.log("\n###### VIEW PREVIOUS DATA #####")
         console.log("<1> View previous records for a particular person")
@@ -24,6 +25,7 @@ class ViewData {
             this.viewMenu()
     }
 
+    //view file data sorted in a particular order
     viewSortedRecord = () => {
         let order = utility.takeUserInput("\n<1> Ascending order <2> Descending order")
         let column = utility.takeUserInput("<1> Last Name <2> PIN code")
@@ -40,6 +42,7 @@ class ViewData {
         console.table(addressbookdata.sort(this.getSortOrder(column, order)))
     }
 
+    //internal function to help sorting (not for public use)
     getSortOrder = (key, order) => {
         return function (a, b) {
             if (a[key] > b[key]) {
@@ -51,6 +54,7 @@ class ViewData {
         }
     }
 
+    //view records of a particular person
     viewParticular = () => {
         var data = utility.retriveData()
         let person = utility.takeUserInput("\nPlease enter full name of person whose details you need.")

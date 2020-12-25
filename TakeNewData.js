@@ -1,12 +1,12 @@
 const utility = require('./MainUtility/Utility.js')
 
-const patternFirstName = RegExp('^[A-Z]{1}[a-z]{2,}.*$', 'gm')
-const patternLastName = RegExp('^[A-Z]{1}[a-z]{2,}.*$', 'gm')
-const patternAddress = RegExp('^.{10,}$', 'gm')
-const patternCity = RegExp('^[A-Z]{1}[a-z]{2,}.*$', 'gm')
-const patternState = RegExp('^[A-Z]{1}[a-z]{2,}.*$', 'gm')
-const patternPIN = RegExp('^[0-9]{6}$', 'gm')
-const patternPhoneNumber = RegExp('^[0-9]{2}[ ][0-9]{10}$', 'gm')
+const patternFirstName = RegExp('^[A-Z]{1}[a-z]{2,}.*$')
+const patternLastName = RegExp('^[A-Z]{1}[a-z]{2,}.*$')
+const patternAddress = RegExp('^.{10,}$')
+const patternCity = RegExp('^[A-Z]{1}[a-z]{2,}.*$')
+const patternState = RegExp('^[A-Z]{1}[a-z]{2,}.*$')
+const patternPIN = RegExp('^[0-9]{6}$')
+const patternPhoneNumber = RegExp('^[0-9]{2}[ ][0-9]{10}$')
 
 var regexArray = [patternFirstName, patternLastName, patternAddress, patternCity, patternState, patternPIN, patternPhoneNumber]
 const detailsRequired = ["first name", "last name", "address", "city", "state", "PIN", "Phone Number"]
