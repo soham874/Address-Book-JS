@@ -10,7 +10,7 @@ class ViewData {
         let choice = utility.takeUserInput("Please enter your choice")
         switch (+choice) {
             case 1:
-
+                this.viewParticular()
                 break;
             case 2:
                 this.viewSortedRecord()
@@ -37,7 +37,7 @@ class ViewData {
         column = (column == 1) ? "Last_Name" : "PIN"
 
         var addressbookdata = utility.retriveData()
-        console.table(addressbookdata.sort(this.getSortOrder(column,order)))
+        console.table(addressbookdata.sort(this.getSortOrder(column, order)))
     }
 
     getSortOrder = (key, order) => {
@@ -49,6 +49,20 @@ class ViewData {
             }
             return 0;
         }
+    }
+
+    viewParticular = () => {
+        var data = utility.retriveData()
+        let person = utility.takeUserInput("\nPlease enter full name of person whose details you need.")
+        var res = person.split(" ")
+
+        for (let i = 0; i < data.length; i++)
+            if (res[0] == data[i].First_Name && res[1] == data[i].Last_Name){
+                console.log("\nDetails found =========>")
+                console.log(`${data[i].First_Name} ${data[i].Last_Name}\n${data[i].Address}, ${data[i].City}, ${data[i].State} - ${data[i].PIN}\nPhone number-${data[i].Phone_Number}`)
+                return
+            }             
+        console.log("Sorry. Records for this person were not found.")
     }
 }
 

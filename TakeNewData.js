@@ -1,26 +1,24 @@
 const utility = require('./MainUtility/Utility.js')
 
-const patternFirstName = RegExp('^[A-Z][a-z]{2,}$', 'gm')
-const patternLastName = RegExp('^[A-Z][a-z]{2,}$', 'gm')
-const patternAddress = RegExp('^[A-Z].{9,}$', 'gm')
-const patternCity = RegExp('^[A-Z][a-z]{2,}$', 'gm')
-const patternState = RegExp('^[A-Z][a-z]{2,}$', 'gm')
+const patternFirstName = RegExp('^[A-Z]{1}[a-z]{2,}.*$', 'gm')
+const patternLastName = RegExp('^[A-Z]{1}[a-z]{2,}.*$', 'gm')
+const patternAddress = RegExp('^.{10,}$', 'gm')
+const patternCity = RegExp('^[A-Z]{1}[a-z]{2,}.*$', 'gm')
+const patternState = RegExp('^[A-Z]{1}[a-z]{2,}.*$', 'gm')
 const patternPIN = RegExp('^[0-9]{6}$', 'gm')
 const patternPhoneNumber = RegExp('^[0-9]{2}[ ][0-9]{10}$', 'gm')
 
-const regexArray = [patternFirstName, patternLastName, patternAddress, patternCity, patternState, patternPIN, patternPhoneNumber]
+var regexArray = [patternFirstName, patternLastName, patternAddress, patternCity, patternState, patternPIN, patternPhoneNumber]
 const detailsRequired = ["first name", "last name", "address", "city", "state", "PIN", "Phone Number"]
-
-const newData = []
 
 class AddDataUtility {
 
     //adds new Details to the required file
     addNewData = (fileName) => {
+        var newData = []
         for (let i = 0; i < detailsRequired.length; i++) {
-            do {
-                let inputData = utility.takeUserInput(`Please input the ${detailsRequired[i]}`)
-                var result = this.detailVerification(regexArray[i], detailsRequired[i], inputData)
+            do {  
+                var result = this.detailVerification(regexArray[i],detailsRequired[i])
             } while (result == 0)
             newData.push(result)
         }
@@ -37,10 +35,11 @@ class AddDataUtility {
     }
 
     //verify a particular required detail
-    detailVerification = (regexString, testingString, name) => {
-        if (regexString.test(name)) {
-            console.log(`${testingString} is according to pattern.`)
-            return name
+    detailVerification = (regexString, input) => {
+        var inputData = utility.takeUserInput(`\nPlease input the ${input}`)
+        if (regexString.test(inputData)) {
+            console.log(`Entered detail is according to pattern.`)
+            return inputData
         }
         console.log("Error in input. Please try again.")
         return 0

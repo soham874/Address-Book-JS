@@ -34,8 +34,8 @@ displayMainMenu = () => {
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Main code starts here~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 console.log("\nWelcome to Address Book!")
-//var fileName = utility.takeUserInput("\nPlease enter file name to load from")
-var fileName = "demo.json"
+var fileName = utility.takeUserInput("\nPlease enter file name to load from")
+//var fileName = "demo.json"
 
 utility.readPresentData(fileName)
 var addressbookdata = utility.retriveData()
