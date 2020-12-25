@@ -68,11 +68,9 @@ class EditDelete {
         var editting = array[res]
         delete array[res]
 
-        console.log(editting)
-
         console.log("First name and last name are not changable. Apart from that choose which data you want to change.")
         do {
-            var choice = utility.takeUserInput("<1> Address <2> City <3> State <4> PIN <5> Phone Number <0> Finish")
+            var choice = utility.takeUserInput("\n<1> Address <2> City <3> State <4> PIN <5> Phone Number <0> Finish")
 
             if (choice >= 1 && choice <= 5) {
                 do {
@@ -120,6 +118,7 @@ class EditDelete {
 
         fs.writeFileSync(fileName,JSON.stringify([]))
         console.log("All data deleted. Reinitializing code data....")
+        utility.readPresentData(fileName)
     }
 }
 
