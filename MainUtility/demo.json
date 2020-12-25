@@ -1,74 +1,74 @@
 [
-    {
-        "First_Name": "Soham",
-        "Last_Name": "Choudhury",
-        "Address": "B.B. Ghosh Road, Burir Bagan",
-        "City": "Barddhaman",
-        "State": "West Bengal",
-        "PIN": "713101",
-        "Phone_Number": "91 9002832439"
-    },
-    {
-        "First_Name": "Donald",
-        "Last_Name": "Trump",
-        "Address": "89 M.G. Road",
-        "City": "Gandhinagar",
-        "State": "Gujrat",
-        "PIN": "944315",
-        "Phone_Number": "91 8556685347"
-    },
-    {
-        "First_Name": "Soham",
-        "Last_Name": "Singh",
-        "Address": "16-Golden Temple Gali",
-        "City": "Punjab",
-        "State": "Haryana",
-        "PIN": "424384",
-        "Phone_Number": "91 8898204690"
-    },
-    {
-        "First_Name": "Vladamir",
-        "Last_Name": "Putin",
-        "Address": "Dockyard Lane",
-        "City": "Panaji",
-        "State": "Goa",
-        "PIN": "800651",
-        "Phone_Number": "91 9106699237"
-    },
-    {
-        "First_Name": "Harry",
-        "Last_Name": "Potter",
-        "Address": "16-Sagarika, Swargadaar Road",
-        "City": "Puri",
-        "State": "Odisha",
-        "PIN": "606157",
-        "Phone_Number": "91 7301485489"
-    },
-    {
-        "First_Name": "Dawood",
-        "Last_Name": "Ibrahim",
-        "Address": "21-Bollywood Lane, Worli",
-        "City": "Mumbai",
-        "State": "Maharashtra",
-        "PIN": "853205",
-        "Phone_Number": "91 7648930765"
-    },
-    {
-        "First_Name": "Tom",
-        "Last_Name": "Cruise",
-        "Address": "76-Taj Mahal Road",
-        "City": "Agar",
-        "State": "Uttar Pradesh",
-        "PIN": "897472",
-        "Phone_Number": "91 7387624587"
-    },
-    {
-        "First_Name": "Vijay",
-        "Last_Name": "Mallya",
-        "Address": "Chattrapati Shivaji Airport",
-        "City": "Mumbai",
-        "State": "Maharashtra",
-        "PIN": "876453",
-        "Phone_Number": "91 9876543210"
-    }
+  {
+    "First_Name": "Soham",
+    "Last_Name": "Choudhury",
+    "Address": "B.B. Ghosh Road, Burir Bagan",
+    "City": "Barddhaman",
+    "State": "West Bengal",
+    "PIN": "713101",
+    "Phone_Number": "91 9002832439"
+  },
+  {
+    "First_Name": "Tom",
+    "Last_Name": "Cruise",
+    "Address": "76-Taj Mahal Road",
+    "City": "Agar",
+    "State": "Uttar Pradesh",
+    "PIN": "897472",
+    "Phone_Number": "91 7387624587"
+  },
+  {
+    "First_Name": "Dawood",
+    "Last_Name": "Ibrahim",
+    "Address": "21-Bollywood Lane, Worli",
+    "City": "Mumbai",
+    "State": "Maharashtra",
+    "PIN": "853205",
+    "Phone_Number": "91 7648930765"
+  },
+  {
+    "First_Name": "Vijay",
+    "Last_Name": "Mallya",
+    "Address": "Chattrapati Shivaji Airport",
+    "City": "Mumbai",
+    "State": "Maharashtra",
+    "PIN": "876453",
+    "Phone_Number": "91 9876543210"
+  },
+  {
+    "First_Name": "Harry",
+    "Last_Name": "Potter",
+    "Address": "16-Sagarika, Swargadaar Road",
+    "City": "Puri",
+    "State": "Odisha",
+    "PIN": "606157",
+    "Phone_Number": "91 7301485489"
+  },
+  {
+    "First_Name": "Soham",
+    "Last_Name": "Singh",
+    "Address": "16-Golden Temple Gali",
+    "City": "Punjab",
+    "State": "Haryana",
+    "PIN": "424384",
+    "Phone_Number": "91 8898204690"
+  },
+  {
+    "First_Name": "Donald",
+    "Last_Name": "Trump",
+    "Address": "89 M.G. Road",
+    "City": "Gandhinagar",
+    "State": "Gujrat",
+    "PIN": "944315",
+    "Phone_Number": "91 8556685347"
+  },
+  {
+    "First_Name": "Vladamir",
+    "Last_Name": "Putin",
+    "Address": "Dockyard Lane, Prawns Corner, Gali Number 420",
+    "City": "Panaji2.0",
+    "State": "Goa",
+    "PIN": "800651",
+    "Phone_Number": "91 9106699237"
+  }
 ]

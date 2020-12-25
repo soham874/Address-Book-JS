@@ -41,4 +41,10 @@ utility.readPresentData(fileName)
 var addressbookdata = utility.retriveData()
 console.log(`Number of records present currently = ${addressbookdata.length}\n`)
 
+console.log("########### CURRENT FUNCTIONALITIES PROVIDED ############")
+console.log("##                  Add new Data                       ##")
+console.log("##              View all Data as sorted                ##")
+console.log("##   CRUD operations on records of one or more person  ##")
+console.log("#########################################################\n")
+
 displayMainMenu()
