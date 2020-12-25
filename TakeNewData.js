@@ -18,7 +18,7 @@ class AddDataUtility {
         var newData = []
         for (let i = 0; i < detailsRequired.length; i++) {
             do {  
-                var result = this.detailVerification(regexArray[i],detailsRequired[i])
+                var result = this.detailVerification(i)
             } while (result == 0)
             newData.push(result)
         }
@@ -35,8 +35,10 @@ class AddDataUtility {
     }
 
     //verify a particular required detail
-    detailVerification = (regexString, input) => {
-        var inputData = utility.takeUserInput(`\nPlease input the ${input}`)
+    detailVerification = (i) => {
+        var regexString = regexArray[i]
+        var input = detailsRequired[i]
+        var inputData = utility.takeUserInput(`\nPlease input ${input}`)
         if (regexString.test(inputData)) {
             console.log(`Entered detail is according to pattern.`)
             return inputData
