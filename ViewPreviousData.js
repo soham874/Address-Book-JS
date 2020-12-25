@@ -64,9 +64,10 @@ class ViewData {
             if (res[0] == data[i].First_Name && res[1] == data[i].Last_Name){
                 console.log("\nDetails found =========>")
                 console.log(`${data[i].First_Name} ${data[i].Last_Name}\n${data[i].Address}, ${data[i].City}, ${data[i].State} - ${data[i].PIN}\nPhone number-${data[i].Phone_Number}`)
-                return
+                return i
             }             
         console.log("Sorry. Records for this person were not found.")
+        return -1
     }
 }
 

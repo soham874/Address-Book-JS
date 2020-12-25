@@ -17,7 +17,7 @@ class Utility {
         try {
             var data = fs.readFileSync(fileName)
             addressBookData = JSON.parse(data);
-            console.log(`\nData loaded from pervious file successfully`)
+            console.log(`\nData loaded successfully`)
         }
         catch (err) {
             let data = JSON.stringify([]);

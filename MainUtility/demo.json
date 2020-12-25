@@ -1,56 +1,38 @@
 [
-    {
-        "First_Name": "Soham",
-        "Last_Name": "Choudhury",
-        "Address": "B.B. Ghosh Road",
-        "City": "Barddhaman",
-        "State": "Westbengal",
-        "PIN": "713101",
-        "Phone_Number": "91 9002832439"
-    },
-    {
-        "First_Name": "Donald",
-        "Last_Name": "Trump",
-        "Address": "Golden Temple Gali",
-        "City": "Amritsar",
-        "State": "Punjab",
-        "PIN": "123456",
-        "Phone_Number": "91 9384754838"
-    },
-    {
-        "First_Name": "Vladamir",
-        "Last_Name": "Putin",
-        "Address": "Dockyard Lane",
-        "City": "Panaji",
-        "State": "Goa",
-        "PIN": "800651",
-        "Phone_Number": "91 9002832439"
-    },
-    {
-        "First_Name": "Dawood",
-        "Last_Name": "Ibrahim",
-        "Address": "21-Bollywood Lane",
-        "City": "Worli",
-        "State": "Mumbai",
-        "PIN": "853206",
-        "Phone_Number": "91 7648930765"
-    },
-    {
-        "First_Name": "Vijay",
-        "Last_Name": "Mallya",
-        "Address": "Chattrapati Shivaji Airport",
-        "City": "Mumbai",
-        "State": "Maharashtra",
-        "PIN": "876398",
-        "Phone_Number": "91 9876543210"
-    },
-    {
-        "First_Name": "Barrack",
-        "Last_Name": "Obama",
-        "Address": "Whit House Gali",
-        "City": "Mumbai",
-        "State": "Maharashtra",
-        "PIN": "765432",
-        "Phone_Number": "98 9876543210"
-    }
+  {
+    "First_Name": "Dawood",
+    "Last_Name": "Ibrahim",
+    "Address": "21-Bollywood Lane",
+    "City": "Worli",
+    "State": "Mumbai",
+    "PIN": "853206",
+    "Phone_Number": "91 7648930765"
+  },
+  {
+    "First_Name": "Vijay",
+    "Last_Name": "Mallya",
+    "Address": "Chattrapati Shivaji Airport",
+    "City": "Mumbai",
+    "State": "Maharashtra",
+    "PIN": "876398",
+    "Phone_Number": "91 9876543210"
+  },
+  {
+    "First_Name": "Barrack",
+    "Last_Name": "Obama",
+    "Address": "Whit House Gali",
+    "City": "Mumbai",
+    "State": "Maharashtra",
+    "PIN": "765432",
+    "Phone_Number": "98 9876543210"
+  },
+  {
+    "First_Name": "Vladamir",
+    "Last_Name": "Putin",
+    "Address": "Dockyard Lane",
+    "City": "Panaji",
+    "State": "Goa",
+    "PIN": "800651",
+    "Phone_Number": "91 9002832439"
+  }
 ]

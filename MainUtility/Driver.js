@@ -1,6 +1,7 @@
 const utility = require('./Utility.js')
 const addUtility = require('../TakeNewData.js')
 const viewUtility = require('../ViewPreviousData.js')
+const editUtility = require('../EditDeleteData.js')
 
 //main menu display function
 displayMainMenu = () => {
@@ -20,7 +21,7 @@ displayMainMenu = () => {
             viewUtility.viewMenu()
             break;
         case 3:
-
+            editUtility.editDeleteMenu(fileName)
             break;
         case 4:
             console.log("\nThank You for using address book!\n")
