@@ -32,6 +32,7 @@ class EditDelete {
             this.editDeleteMenu()
     }
 
+    //delete the record of a particular person
     deleteParticular = (fileName) => {
         let res = viewUtility.viewParticular()
         if (res == -1)
@@ -53,6 +54,7 @@ class EditDelete {
         utility.readPresentData(fileName)
     }
 
+    //edit the records of a particular person
     editParticular = (fileName) => {
         let res = viewUtility.viewParticular()
         if (res == -1)
@@ -108,6 +110,7 @@ class EditDelete {
         utility.readPresentData(fileName)
     }
 
+    //delete all the records from file
     deleteAllData = (fileName) => {
 
         let flag = utility.takeUserInput("\nAre you sure you want to delete all records? Enter 0 to abort")

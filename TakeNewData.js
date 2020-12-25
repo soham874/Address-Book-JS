@@ -1,3 +1,4 @@
+const { verify } = require('crypto')
 const utility = require('./MainUtility/Utility.js')
 
 const patternFirstName = RegExp('^[A-Z]{1}[a-z]{2,}.*$')
@@ -20,7 +21,13 @@ class AddDataUtility {
             do {  
                 var result = this.detailVerification(i)
             } while (result == 0)
+
             newData.push(result)
+
+            if(i == 1 && this.verify(newData[0],newData[1])){
+                console.log("\nRecords for this person already exists.")
+                return
+            }
         }
         let formattedData = {
             First_Name: newData[0],
@@ -45,6 +52,15 @@ class AddDataUtility {
         }
         console.log("Error in input. Please try again.")
         return 0
+    }
+
+    //prevents duplicate entries
+    verify = (firstname,lastname) => {
+        let data = utility.retriveData()
+        for (let i = 0; i < data.length; i++)
+            if (firstname == data[i].First_Name && lastname == data[i].Last_Name)
+                return true
+        return false
     }
 }
 
