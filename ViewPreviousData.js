@@ -1,4 +1,5 @@
 const utility = require('./Utility.js')
+const detailsRequired = ["First_Name", "Last_Name", "Address", "City", "State", "PIN", "Phone_Number"]
 
 class ViewData {
 
@@ -57,17 +58,18 @@ class ViewData {
     //view records of a particular person
     viewParticular = () => {
         var data = utility.retriveData()
-        let person = utility.takeUserInput("\nPlease enter full name of person whose details you need.")
-        var res = person.split(" ")
+        console.log("\n<1> First Name <2> Last Name <3> Address <4> City <5> State <6> PIN <7> Phone Number")
+        let choice = utility.takeUserInput("\nPlease enter on which detail's basis you want to search")
+        var input = utility.takeUserInput(`Please enter ${detailsRequired[choice - 1]} to search by`)
 
-        for (let i = 0; i < data.length; i++)
-            if (res[0] == data[i].First_Name && res[1] == data[i].Last_Name){
-                console.log("\nDetails found =========>")
-                console.log(`${data[i].First_Name} ${data[i].Last_Name}\n${data[i].Address}, ${data[i].City}, ${data[i].State} - ${data[i].PIN}\nPhone number-${data[i].Phone_Number}`)
-                return i
-            }             
-        console.log("Sorry. Records for this person were not found.")
-        return -1
+        var i = data.findIndex(val => val[detailsRequired[choice - 1]] === input)
+
+        if (i == -1)
+            console.log("Sorry. matching records were not found.")
+        else
+            console.log(`\n${data[i].First_Name} ${data[i].Last_Name}\n${data[i].Address}, ${data[i].City}, ${data[i].State} - ${data[i].PIN}\nPhone number-${data[i].Phone_Number}`)
+
+        return i
     }
 }
 

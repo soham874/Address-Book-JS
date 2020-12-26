@@ -1,14 +1,5 @@
 [
   {
-    "First_Name": "Soham",
-    "Last_Name": "Choudhury",
-    "Address": "B.B. Ghosh Road, Burir Bagan",
-    "City": "Barddhaman",
-    "State": "West Bengal",
-    "PIN": "713101",
-    "Phone_Number": "91 9002832439"
-  },
-  {
     "First_Name": "Tom",
     "Last_Name": "Cruise",
     "Address": "76-Taj Mahal Road",
@@ -45,6 +36,15 @@
     "Phone_Number": "91 7301485489"
   },
   {
+    "First_Name": "Vladamir",
+    "Last_Name": "Putin",
+    "Address": "Dockyard Lane, Prawns Corner, Gali Number 420",
+    "City": "Panaji2.0",
+    "State": "Goa",
+    "PIN": "800651",
+    "Phone_Number": "91 9106699237"
+  },
+  {
     "First_Name": "Soham",
     "Last_Name": "Singh",
     "Address": "16-Golden Temple Gali",
@@ -63,12 +63,12 @@
     "Phone_Number": "91 8556685347"
   },
   {
-    "First_Name": "Vladamir",
-    "Last_Name": "Putin",
-    "Address": "Dockyard Lane, Prawns Corner, Gali Number 420",
-    "City": "Panaji2.0",
-    "State": "Goa",
-    "PIN": "800651",
-    "Phone_Number": "91 9106699237"
+    "First_Name": "Soham",
+    "Last_Name": "Choudhury",
+    "Address": "Some new address",
+    "City": "Barddhaman",
+    "State": "West Bengal",
+    "PIN": "713101",
+    "Phone_Number": "91 9002832439"
   }
 ]

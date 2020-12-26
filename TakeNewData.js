@@ -17,14 +17,14 @@ class AddDataUtility {
     addNewData = (fileName) => {
         var newData = []
         for (let i = 0; i < detailsRequired.length; i++) {
-            do {  
+            do {
                 var result = this.detailVerification(i)
             } while (result == 0)
 
             newData.push(result)
 
-            if(i == 1 && this.verify(newData[0],newData[1])){
-                console.log("\nRecords for this person already exists.")
+            if (i == 6 && this.verify(newData[6])) {
+                console.log("\nRecords for this phone number already exists.")
                 return
             }
         }
@@ -36,8 +36,8 @@ class AddDataUtility {
             State: newData[4],
             PIN: newData[5],
             Phone_Number: newData[6]
-          }
-        utility.writeNewData(fileName,formattedData)
+        }
+        utility.writeNewData(fileName, formattedData)
     }
 
     //verify a particular required detail
@@ -54,11 +54,11 @@ class AddDataUtility {
     }
 
     //prevents duplicate entries
-    verify = (firstname,lastname) => {
+    verify = (phone) => {
         let data = utility.retriveData()
-        for (let i = 0; i < data.length; i++)
-            if (firstname == data[i].First_Name && lastname == data[i].Last_Name)
-                return true
+        let pos = data.findIndex(val => val.Phone_Number === phone)
+        if (pos != -1)
+            return true
         return false
     }
 }
